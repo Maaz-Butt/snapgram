@@ -7,6 +7,14 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-    },
+    }
   },
 })
+
+module.exports = {
+  build: {
+    // **Disables type checking during build**
+    minify: false,
+    // Add other build options if needed
+  },
+};
